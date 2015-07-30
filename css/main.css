@@ -2,7 +2,13 @@
    Author's custom styles
    ========================================================================== */
 
-#map-container { height: 180px; }
+#map-container { height: 260px; }	
+
+dd {
+	font-size: 14px;
+	margin-bottom: 10px;
+	font-style: italic;
+}
 
 
 

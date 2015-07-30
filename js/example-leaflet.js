@@ -28,8 +28,11 @@ var mapLayers = {
     "Satellite": satLayer,
     "Map View": drawLayer,
     "Open Street Maps": osm
-}
+};
 
+var map = L.map('map-container').setView([46.852, -121.760], 13);
+var map = L.map('map-container').setView([46.852, -121.760], 13);
+var map = L.map('map-container').setView([46.852, -121.760], 13);
 var map = L.map('map-container').setView([46.852, -121.760], 13);
 
 L.control.layers(mapLayers).addTo(map);
