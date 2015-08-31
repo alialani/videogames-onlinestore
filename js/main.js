@@ -15,6 +15,13 @@ $(document).ready(function(){
 		$(this).tab('show');
 	});
 	
+	$('#myCarousel').carousel({
+		interval: 3000
+		});
+
+	$('#myCarousel2').carousel({
+		interval: 3000
+	});
 	
 /*
     This is an example implementation of the Leaflet.js map to fulfill the
@@ -75,5 +82,7 @@ $(document).ready(function(){
 // TODO: Customize that Map to show markers with popups at no fewer than 3
 // interesting locations. (You'll need to figure out the latitude/longitude for
 // these locations using a mapping tool such as Google Maps.)
+	
+
 
 });
