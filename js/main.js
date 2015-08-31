@@ -10,6 +10,24 @@
 
 
 $(document).ready(function(){
+	
+	var voteCounts = {
+        great: 0,
+        greatest: 0,
+        total: 0
+    };
+
+	// Function to listen for clicks on the "login" button.
+	// When a user clicks the "login" button, 
+   	$('.login-btn').on('click', function(event){
+		var targetElement = event.target;
+		var container = targetElement.parentElement;
+	// Hide the login form elements on the page.
+		$(container).fadeOut(); 
+	// Fill the user's first and last name into `div.user-info`.
+		$('.user-fullname').innerText = userInfo.firstName + " " + userInfo.lastName;
+	});
+	
 	$('#myTabs a').click(function (e) {
 		e.preventDefault();
 		$(this).tab('show');

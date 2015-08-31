@@ -18,6 +18,7 @@ body {
 
 
 .jumbotron {
+	height: 340px;
  	background-image: url(../img/games/header.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -41,9 +42,20 @@ body {
   width:5%;
 }
 
+.well {
+	background-image: url(../img/games/blue.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 
+.user-info {
+    display: none;
+}
 
-
+.form-control {
+    height: 25px;
+}
 
 
 
