@@ -22,13 +22,12 @@
     <body>
 		<header>
 			
-			<nav class="navbar navbar-default" style="margin: 0; padding: 0; background: #003333">
+	<nav class="navbar navbar-default" style="margin: 0; padding: 0; background: #003333">
 		<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -39,61 +38,86 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav" style="font-size: 14px">
-					<li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+					<li class="active"><a href="index.html" style=" color: #FF9900">Home <span class="sr-only">(current)</span></a></li>
 					<li><a href="#">About us</a></li>
-					<li><a href="#">Games</a></li>
+					<li><a href="games.html">Games</a></li>
 					<li><a href="#">Contact us</a></li>  
 					<li><a href="locations.html">Locations</a></li>
 				</ul>
-				<form class="navbar-form navbar-left" role="search">
+				<form class="navbar-form navbar-left" role="search" style="margin-top: 15px">
 					<div class="form-group">
 					<input type="text" class="form-control" placeholder="Search">
 					</div>
-					<button type="submit" class="btn btn-default">Submit</button>
+					<button type="submit" class="btn btn-default btn-sm">Submit</button>
 				</form>
 			</div><!-- /.navbar-collapse -->
 			
-			<div id="navbar" class="navbar-collapse collapse">
-			  <div class="navbar-right user-info">Welcome, <span class="user-fullname">First Last</span> <a class="btn btn-default btn-sm">Logout</a></div>
-			  <form class="navbar-form navbar-right" role="form" id="login-form" style=" margin-top: -50px; margin-left: 20px">
-				<div class="form-group">
-				  <input type="text" placeholder="Email" class="form-control">
-				</div>
-				<div class="form-group">
-				  <input type="password" placeholder="Password" class="form-control">
-				</div>
-				<a class="btn btn-default btn-sm login-btn">Login</a>
-			  </form>
-        	</div><!--/.navbar-collapse -->
+			<div class="row" style="padding-left: 60%; margin-top: -55px">
+				<div class="col-md-4" id="social-list" style="margin-top: 13px; padding: 0">
+					<a href="https://www.facebook.com/fitbit" target="_blank"><img src="img/social/facebook-xxl.png" width="25" height="25"></a></li>
+					<a href="https://www.twitter.com/fitbit" target="_blank"><img src="img/social/twitter-xxl.png" width="25" height="25"></a></li>								
+					<a href="https://www.youtube.com/user/FitbitOfficialSite" target="_blank"><img src="img/social/youtube-2-256.png" width="29" height="29"></a></li>
+					<a href="https://plus.google.com/+fitbit" target="_blank"><img src="img/social/google-plus-icon-transparent-png.png" width="33" height="33"></a></li>
+					<a href="https://blog.fitbit.com/" target="_blank"><img src="img/social/rss-xxl.png" width="25" height="25"></a></li>
+				</div> 
+			
+				<div class="navbar-collapse collapse" style="margin-left: 0; padding-left: 0">
+				  <div class="navbar-right user-info">Welcome, 
+					  <span class="user-fullname">First Last</span> <a class="btn btn-default btn-sm">Logout</a>
+				  </div>
+<!-- 				  <div class="dropdown" style="float: right; margin-right: 250px">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a> -->
+					  
+				 <div class="dropdown" style="width: 215px; float: right; margin-top: 40px">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="float: right; font-wight: bold; color: #FF9900">LOGIN<span class="caret"></span></a>
+					  <ul class="dropdown-menu" style="margin-top: 0; padding-right: 10px; padding-left: 10px; background: #003333">
+						<li><input type="text" placeholder="Email" class="form-control"></li>
+						<li><input type="password" placeholder="Password" class="form-control"></li>
+						<li><p><a class="btn btn-default btn-sm login-btn" style="color: #FF9900">Login</a>&nbsp; &nbsp;<a style="color: #FF9900">Create an account</a></p></li>
+					  </ul>
+				 </div> <!-- .dropdpwn -->
+				</div><!--/.navbar-collapse -->
+			</div><!--/.row -->
  
 		</div><!-- /.container-fluid -->
 	</nav>
-			
-<!-- 		<div class="share-it">
-				<p>
-					<a class="facebook" href="http://www.facebook.com/apistore"><img src="img/icons/Facebook-New-Logo-2013.png" width="30px"></a>
-					<a class="twitter" href="http://twitter.com/#!/apistore"><img src="img/icons/Twitterlogo.png" width="30px"></a>
-					<a class="youtube" href="http://www.youtube.com/user/apistore/videos"><img src="img/icons/youtube_logo_detail.png" width="30px"></a>
-					<a class="google" href="http://www.google.com/apistore"><img src="img/icons/Google_Logo_06.png" width="30px"></a>
-					<a class="linkedin" href="http://www.linkedin.com/apistore"><img src="img/icons/LinkedIn_logo_initials.png" width="30px"></a>
-				</p>
-			</div> -->
 
-
-	<div class="jumbotron" style= "margin: 0;">
-		<div style="margin-left: 20px; margin-top: 20px">
-			<h1 style="font-weight: bold">GAMERS!</h1>
+	<div class="jumbotron" id="brief" style= "margin: 0; padding-top: 10px">
+		<div style="margin-left: 20px; margin-top: 0">
+			<h1 style="font-weight: bold; color: #FF9900">GAMERS!</h1>
 			<p style="font-size; 6px; width: 500px">Our website founded in 2012 in partnership with Media. Its mission is to cover not only games but the artists who make them, the fans that love them and the culture surrounding them.</p>
 			<p><a class="btn btn-primary btn-sm" href="#" role="button" style="font-size: 18px; margin-top: 5px">More..</a></p>
 		</div>
 	</div>
 			
-
 		</Header>
+
+		<div class="continer" style="width: 17%; float: left; marign-top: 0; padding: 0">
+			<div class="continer" style="background: #FF9900; height: 62px">
+				<h3 style="margin-left: 45px; padding-top: 19px; margin-top: 0">New Stream</h3>
+			</div>
+			<div class="container" id="new-stream" style="background: #003333; width: 100%; height: 1475px; padding-top: 10px; border: thin ridge #FF9900">
+				<p class="active"><a href="#">Assassin’s Creed Syndicate’s producer talks twins, Thames and trains</a></p>
+				<p><a href="#">Tetsuya Nomora: The Kingdom Hearts Interview</a></p>
+				<p><a href="#">Force Friday showed us lots of new Star Wars toys - here are our favorites</a></p>
+				<p><a href="#">Add this Uncharted: The Nathan Drake Collection PS4 bundle to your Nolan North shrine</a></p>  
+				<p><a href="#">Tetsuya Nomora: The Kingdom Hearts Interview</a></p>
+				<p><a href="#">Force Friday showed us lots of new Star Wars toys - here are our favorites</a></p>
+				<p><a href="#">Add this Uncharted: The Nathan Drake Collection PS4 bundle to your Nolan North shrine</a></p>  
+				<p><a href="#">Tetsuya Nomora: The Kingdom Hearts Interview</a></p>
+				<p><a href="#">Force Friday showed us lots of new Star Wars toys - here are our favorites</a></p>
+				<p><a href="#">Add this Uncharted: The Nathan Drake Collection PS4 bundle to your Nolan North shrine</a></p>  
+				<p><a href="#">Tetsuya Nomora: The Kingdom Hearts Interview</a></p>
+				<p><a href="#">Force Friday showed us lots of new Star Wars toys - here are our favorites</a></p>
+				<p><a href="#">Add this Uncharted: The Nathan Drake Collection PS4 bundle to your Nolan North shrine</a></p>  
+				<p><a href="#">Tetsuya Nomora: The Kingdom Hearts Interview</a></p>
+				<p><a href="#">Force Friday showed us lots of new Star Wars toys - here are our favorites</a></p>
+			</div>
+		</div>
       
-	<div class="container">
-    <div class="col-md-12">
-         <h1>New Games</h1>
+	<div class="container" style="width: 84%; margin-left: 16%; padding-right: 0; margin-right: 0">
+    <div class="col-md-12" style="margin: 0; padding: 0">
+         <h2 style="padding-left: 10px; color: #FF9900">New Games</h2>
 
         <div class="well" style="background: #003333">
             <div id="myCarousel" class="carousel slide">
@@ -103,7 +127,7 @@
                     <div class="item active">
                         <div class="row">
                             <div class="col-md-4"><a href="#x"><img src="img/games/2013_company_of_heroes_2_game-wide.jpg" alt="Image" class="img-responsive"></a>
-                            	<h3>COMPANY OF HEROES 2</h3>
+                            	<h4>COMPANY OF HEROES 2</h4>
 								<p>Genre: Adventure<br>Date: 07, 2014<br>Rating: 
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -117,7 +141,7 @@
 
 							</div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/god-of-war-ascension-wallpaper-2.png" alt="Image" class="img-responsive"></a>
-                            	<h3>GOD OF WAR ASCENSION</h3>
+                            	<h4>GOD OF WAR ASCENSION</h4>
 								<p>Genre: Adventure, Thrill<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -130,7 +154,7 @@
 								<p><a class="btn btn-primary btn-xs" href="#" role="button" style="font-size: 12px; margin-top: 0">More</a></p>
 							</div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/call_of_duty_black_ops_iii_2015_video_game-2880x1800.jpg" alt="Image" class="img-responsive"></a>
-								<h3>CALL OF DUTY BLACK OPPS III</h3>
+								<h4>CALL OF DUTY BLACK OPPS III</h4>
 								<p>Genre: Adventure<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -149,7 +173,7 @@
                     <div class="item">
                         <div class="row">
                             <div class="col-md-4"><a href="#x"><img src="img/games/dark_souls_2_scholar_of_the_first_sin_wallpaper_1_by_dragoncrestpc-d8sewjz.jpg" alt="Image" class="img-responsive"></a>
-								<h3>DARK SOULS III</h3>
+								<h4>DARK SOULS III</h4>
 								<p>Genre: Horror<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -162,7 +186,7 @@
 								<p><a class="btn btn-primary btn-xs" href="#" role="button" style="font-size: 12px; margin-top: 0">More</a></p>
                             </div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/1489498.jpg" alt="Image" class="img-responsive"></a>
-								<h3>HOMEFRONT</h3>
+								<h4>HOMEFRONT</h4>
 								<p>Genre: Adventure<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -175,7 +199,7 @@
 								<p><a class="btn btn-primary btn-xs" href="#" role="button" style="font-size: 12px; margin-top: 0">More</a></p>
                             </div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/PlanetSide-2-space-wallpaper.jpg" alt="Image" class="img-responsive"></a>
-								<h3>PLANETSIDE</h3>
+								<h4>PLANETSIDE</h4>
 								<p>Genre: Sci-Fi<br>Date: 03, 2015<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -195,7 +219,7 @@
                     <div class="item">
                         <div class="row">
                             <div class="col-md-4"><a href="#x"><img src="img/games/dyingight.jpg" alt="Image" class="img-responsive"></a>
-								<h3>DYING LIGHT</h3>
+								<h4>DYING LIGHT</h4>
 								<p>Genre: Horror<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -208,7 +232,7 @@
 								<p><a class="btn btn-primary btn-xs" href="#" role="button" style="font-size: 12px; margin-top: 0">More</a></p>
                             </div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/eve_dust_514-wide.jpg" alt="Image" class="img-responsive"></a>
-								<h3>EVE DUST</h3>
+								<h4>EVE DUST</h4>
 								<p>Genre: Sci-Fi<br>Date: 12, 2013<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -221,7 +245,7 @@
 								<p><a class="btn btn-primary btn-xs" href="#" role="button" style="font-size: 12px; margin-top: 0">More</a></p>
                             </div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/batman_arkham_knight_hd_wallpaper_1_by_rajivcr7-d7l19pt.jpg" alt="Image" class="img-responsive"></a>
-								<h3>BATMAN ARKHAM KNIGHT</h3>
+								<h4>BATMAN ARKHAM KNIGHT</h4>
 								<p>Genre: Adventure, Sci-Fi<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -247,18 +271,18 @@
         <!--/well-->
     </div>
 		
-    <div class="col-md-12">
-         <h1>Top Rated</h1>
+    <div class="col-md-12" style="margin: 0; padding: 0">
+         <h2 style="padding-left: 10px; color: #FF9900">Top Rated</h2>
 
         <div class="well" style="background: #003333">
-            <div id="myCarousel" class="carousel slide">
+            <div id="myCarousel2" class="carousel slide">
                 
                 <!-- Carousel items -->
                 <div class="carousel-inner">
                     <div class="item active">
                         <div class="row">
                             <div class="col-md-4"><a href="#x"><img src="img/games/2013_company_of_heroes_2_game-wide.jpg" alt="Image" class="img-responsive"></a>
-                            	<h3>COMPANY OF HEROES 2</h3>
+                            	<h4>COMPANY OF HEROES 2</h4>
 								<p>Genre: Adventure<br>Date: 07, 2014<br>Rating: 
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -272,7 +296,7 @@
 
 							</div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/god-of-war-ascension-wallpaper-2.png" alt="Image" class="img-responsive"></a>
-                            	<h3>GOD OF WAR ASCENSION</h3>
+                            	<h4>GOD OF WAR ASCENSION</h4>
 								<p>Genre: Adventure, Thrill<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -285,7 +309,7 @@
 								<p><a class="btn btn-primary btn-xs" href="#" role="button" style="font-size: 12px; margin-top: 0">More</a></p>
 							</div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/call_of_duty_black_ops_iii_2015_video_game-2880x1800.jpg" alt="Image" class="img-responsive"></a>
-								<h3>CALL OF DUTY BLACK OPPS III</h3>
+								<h4>CALL OF DUTY BLACK OPPS III</h4>
 								<p>Genre: Adventure<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -304,7 +328,7 @@
                     <div class="item">
                         <div class="row">
                             <div class="col-md-4"><a href="#x"><img src="img/games/dark_souls_2_scholar_of_the_first_sin_wallpaper_1_by_dragoncrestpc-d8sewjz.jpg" alt="Image" class="img-responsive"></a>
-								<h3>DARK SOULS III</h3>
+								<h4>DARK SOULS III</h4>
 								<p>Genre: Horror<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -317,7 +341,7 @@
 								<p><a class="btn btn-primary btn-xs" href="#" role="button" style="font-size: 12px; margin-top: 0">More</a></p>
                             </div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/1489498.jpg" alt="Image" class="img-responsive"></a>
-								<h3>HOMEFRONT</h3>
+								<h4>HOMEFRONT</h4>
 								<p>Genre: Adventure<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -330,7 +354,7 @@
 								<p><a class="btn btn-primary btn-xs" href="#" role="button" style="font-size: 12px; margin-top: 0">More</a></p>
                             </div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/PlanetSide-2-space-wallpaper.jpg" alt="Image" class="img-responsive"></a>
-								<h3>PLANETSIDE</h3>
+								<h4>PLANETSIDE</h4>
 								<p>Genre: Sci-Fi<br>Date: 03, 2015<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -350,7 +374,7 @@
                     <div class="item">
                         <div class="row">
                             <div class="col-md-4"><a href="#x"><img src="img/games/dyingight.jpg" alt="Image" class="img-responsive"></a>
-								<h3>DYING LIGHT</h3>
+								<h4>DYING LIGHT</h4>
 								<p>Genre: Horror<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -363,7 +387,7 @@
 								<p><a class="btn btn-primary btn-xs" href="#" role="button" style="font-size: 12px; margin-top: 0">More</a></p>
                             </div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/eve_dust_514-wide.jpg" alt="Image" class="img-responsive"></a>
-								<h3>EVE DUST</h3>
+								<h4>EVE DUST</h4>
 								<p>Genre: Sci-Fi<br>Date: 12, 2013<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -376,7 +400,7 @@
 								<p><a class="btn btn-primary btn-xs" href="#" role="button" style="font-size: 12px; margin-top: 0">More</a></p>
                             </div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/batman_arkham_knight_hd_wallpaper_1_by_rajivcr7-d7l19pt.jpg" alt="Image" class="img-responsive"></a>
-								<h3>BATMAN ARKHAM KNIGHT</h3>
+								<h4>BATMAN ARKHAM KNIGHT</h4>
 								<p>Genre: Adventure, Sci-Fi<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -402,18 +426,18 @@
         <!--/well-->
     </div>
 		
-		    <div class="col-md-12">
-         <h1>Coming Soon</h1>
+		    <div class="col-md-12" style="margin: 0; padding: 0">
+         <h2 style="padding-left: 10px; color: #FF9900"> Coming Soon</h2>
 
         <div class="well" style="background: #003333">
-            <div id="myCarousel" class="carousel slide">
+            <div id="myCarousel3" class="carousel slide">
                 
                 <!-- Carousel items -->
                 <div class="carousel-inner">
                     <div class="item active">
                         <div class="row">
                             <div class="col-md-4"><a href="#x"><img src="img/games/2013_company_of_heroes_2_game-wide.jpg" alt="Image" class="img-responsive"></a>
-                            	<h3>COMPANY OF HEROES 2</h3>
+                            	<h4>COMPANY OF HEROES 2</h4>
 								<p>Genre: Adventure<br>Date: 07, 2014<br>Rating: 
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -427,7 +451,7 @@
 
 							</div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/god-of-war-ascension-wallpaper-2.png" alt="Image" class="img-responsive"></a>
-                            	<h3>GOD OF WAR ASCENSION</h3>
+                            	<h4>GOD OF WAR ASCENSION</h4>
 								<p>Genre: Adventure, Thrill<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -440,7 +464,7 @@
 								<p><a class="btn btn-primary btn-xs" href="#" role="button" style="font-size: 12px; margin-top: 0">More</a></p>
 							</div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/call_of_duty_black_ops_iii_2015_video_game-2880x1800.jpg" alt="Image" class="img-responsive"></a>
-								<h3>CALL OF DUTY BLACK OPPS III</h3>
+								<h4>CALL OF DUTY BLACK OPPS III</h4>
 								<p>Genre: Adventure<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -459,7 +483,7 @@
                     <div class="item">
                         <div class="row">
                             <div class="col-md-4"><a href="#x"><img src="img/games/dark_souls_2_scholar_of_the_first_sin_wallpaper_1_by_dragoncrestpc-d8sewjz.jpg" alt="Image" class="img-responsive"></a>
-								<h3>DARK SOULS III</h3>
+								<h4>DARK SOULS III</h4>
 								<p>Genre: Horror<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -472,7 +496,7 @@
 								<p><a class="btn btn-primary btn-xs" href="#" role="button" style="font-size: 12px; margin-top: 0">More</a></p>
                             </div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/1489498.jpg" alt="Image" class="img-responsive"></a>
-								<h3>HOMEFRONT</h3>
+								<h4>HOMEFRONT</h4>
 								<p>Genre: Adventure<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -485,7 +509,7 @@
 								<p><a class="btn btn-primary btn-xs" href="#" role="button" style="font-size: 12px; margin-top: 0">More</a></p>
                             </div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/PlanetSide-2-space-wallpaper.jpg" alt="Image" class="img-responsive"></a>
-								<h3>PLANETSIDE</h3>
+								<h4>PLANETSIDE</h4>
 								<p>Genre: Sci-Fi<br>Date: 03, 2015<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -505,7 +529,7 @@
                     <div class="item">
                         <div class="row">
                             <div class="col-md-4"><a href="#x"><img src="img/games/dyingight.jpg" alt="Image" class="img-responsive"></a>
-								<h3>DYING LIGHT</h3>
+								<h4>DYING LIGHT</h4>
 								<p>Genre: Horror<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -518,7 +542,7 @@
 								<p><a class="btn btn-primary btn-xs" href="#" role="button" style="font-size: 12px; margin-top: 0">More</a></p>
                             </div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/eve_dust_514-wide.jpg" alt="Image" class="img-responsive"></a>
-								<h3>EVE DUST</h3>
+								<h4>EVE DUST</h4>
 								<p>Genre: Sci-Fi<br>Date: 12, 2013<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -531,7 +555,7 @@
 								<p><a class="btn btn-primary btn-xs" href="#" role="button" style="font-size: 12px; margin-top: 0">More</a></p>
                             </div>
                             <div class="col-md-4"><a href="#x"><img src="img/games/batman_arkham_knight_hd_wallpaper_1_by_rajivcr7-d7l19pt.jpg" alt="Image" class="img-responsive"></a>
-								<h3>BATMAN ARKHAM KNIGHT</h3>
+								<h4>BATMAN ARKHAM KNIGHT</h4>
 								<p>Genre: Adventure, Sci-Fi<br>Date: 07, 2014<br>Rating:      
 									<div id="stars-existing" class="starrr" data-rating="4" style="margin-left: 50px; margin-top: -28px">
 										<span class="glyphicon .glyphicon-star-empty glyphicon-star"></span>
@@ -560,19 +584,25 @@
 </div>
 
 		
+		<div class="jumbotron" id="reviews" style= "margin: 20px; padding: 10px; width: 90%">
+			<h2 style= "padding-left: 20px; color: #FF9900"> Reviews</h2>
+			<div style="padding: 20px; margin: 20px; border: thin ridge #FF9900; background: #003333">
+				<h3> NewYork Times</h3>
+				<p>Video games are frowned upon by parents as time-wasters, and worse, some education experts think that these games corrupt the brain.  Playing violent video games are easily blamed by the media and some experts as the reason why some young people become violent or commit extreme anti-social behavior.</p>				
+				
+				<h3> Gamers's Magazine</h3>
+				<p>This page is meant to provide an experimental proof of concept for a mobile-friendly layout that can be used to inform the creation of a card matching game.</p>
+
+				<h3> Some Gamer</h3>
+				<p>My first day with Super Mario Maker was slow-going. I wasn't satisfied with what I'd made using the few tools I had, so I slept on it. During the night, inspiration struck. I woke up the next morning and set to work on my first masterpiece: Goomba-opolis, a level where the iconic, dim-witted enemies poured out of every brick, every pipe, and covered every surface. I made a tower of goombas.</p>
+			</div>
+		</div>
+		
 		
 		
 	<footer>
-		<div class="testimonial" style="padding-left: 20px">
-			<h2 style="border-top: thin ridge"> NewYork Times</h2>
-			<p>his page is meant to provide an experimental proof of concept for a mobile-friendly layout that can be used to inform the creation of a card matching game.</p>
 
-			<h2> Gamers's Magazine</h2>
-			<p>his page is meant to provide an experimental proof of concept for a mobile-friendly layout that can be used to inform the creation of a card matching game.</p>
 
-			<h2> Some Gamer</h2>
-			<p>his page is meant to provide an experimental proof of concept for a mobile-friendly layout that can be used to inform the creation of a card matching game.</p>	
-		</div>
 		
 	</footer>
 

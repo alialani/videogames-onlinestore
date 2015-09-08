@@ -21,7 +21,7 @@ $(document).ready(function(){
 	// When a user clicks the "login" button, 
    	$('.login-btn').on('click', function(event){
 		var targetElement = event.target;
-		var container = targetElement.parentElement;
+		var container = targetElement.parentElement.parentElement.parentElement.parentElement;
 	// Hide the login form elements on the page.
 		$(container).fadeOut(); 
 	// Fill the user's first and last name into `div.user-info`.
@@ -39,6 +39,10 @@ $(document).ready(function(){
 
 	$('#myCarousel2').carousel({
 		interval: 3000
+	});
+	
+	$('#myCarousel3').carousel({
+	interval: 3000
 	});
 	
 /*
